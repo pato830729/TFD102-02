@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'gensen_b';
+    src: url('../fonts/GenSenRounded-B.ttc');
+}
+
+@font-face {
+    font-family: 'gensen_r';
+    src: url('../fonts/GenSenRounded-R.ttc');
+}
+
+* {
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: gensen_b, "Microsoft JhengHei", PingFang;
+}
+
+/* 以下是header */
+
+/* 以下是分頁導覽 */
+
+nav.header_name {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #202020;
+    z-index: 4;
+}
+
+a.nav_link {
+    color: #E7E7E7;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    font-size: .8rem;
+}
+
+a.now_page{
+    color: #FBB03B;
+}
+
+li.logo_link {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+img.header_logosize{
+    width: 60px;
+}
+
+a.nav_link:hover {
+    color: #FBB03B;
+}
+
+li.svg_box {
+    width: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.header_nav {
+    list-style: none;
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.header_nav>li {
+    width: 7%;
+    margin: 0px;
+}
+
+svg.svgLogo {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+svg.svgLogo a {
+    color: #E7E7E7;
+}
+
+svg.svgLogo a:hover {
+    color: #FBB03B;
+}
+
+/* 以上是分頁導覽 */
+
+/* 以上是header */
+
+
+/* 以下是footer */
+
+footer.footer_bg {
+    height: 280px;
+    width: 100%;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+}
+
+div.footer_content {
+    /* border: 1px solid red; */
+    width: 60%;
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.footer_width {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+div.logo_address {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+img.footer_logosize{
+    /* border: 1px solid red; */
+    width:100px;
+}
+
+div.logo_address>div {
+    margin: 0px;
+}
+
+div.address {
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content:flex-start; */
+    flex-direction: column;
+}
+
+span.span_address {
+    color: white;
+    margin: 0px;
+    margin-top: 10px;
+    font-family: gensen_r;
+    font-size: .8rem;
+}
+
+span.icon_address::before {
+    /* border: 1px solid red; */
+    content: "";
+    display: inline-block;
+    background-image: url(../image/map-marker-alt-solid.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+}
+
+span.icon_tel::before {
+    /* border: 1px solid red; */
+    content: "";
+    display: inline-block;
+    background-image: url(../image/phone-solid.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+}
+
+span.icon_mail::before {
+    /* border: 1px solid red; */
+    content: "";
+    display: inline-block;
+    background-image: url(../image/envelope-solid.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+}
+
+table.table_link {
+    margin: 0px;
+}
+
+span.project_statement {
+    /* border: 1px solid red; */
+    color: white;
+    font-family: gensen_r;
+    font-size: .3rem;
+}
+
+table.table_link td {
+    padding-top: 10px;
+    padding-right: 60px;
+}
+
+a.footer_link {
+    color: #E7E7E7;
+    text-decoration: none;
+    font-family: gensen_r;
+    font-size: .8rem;
+}
+
+a.footer_link:hover {
+    color: #FBB03B;
+}
+
+svg.footer_svgLogo {
+    margin-left: 15px;
+    width: 27px;
+    height: 27px;
+}
+
+svg.footer_svgLogo a {
+    color: #E7E7E7;
+}
+
+svg.footer_svgLogo a:hover {
+    color: #FBB03B;
+}
+
+div.statement_width {
+    margin: 0px;
+    /* width: 80%; */
+}
+
+div.social_width {
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-end;
+}
+
+div.statement_social {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* 以上是footer */

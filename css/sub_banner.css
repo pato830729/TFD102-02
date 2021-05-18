@@ -1,0 +1,131 @@
+a{
+    text-decoration: none;
+}
+
+div.height{
+    height: 100px;
+}
+
+div.banner_bg {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+img.banner_img {
+    max-width: 100%;
+    /* max-height: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.banner_switch {
+    width: 95%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+path.right_icon {
+    fill: #ffffff;
+}
+
+div.left_bg {
+    background-image: url(../image/angle-left-solid.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 45% 50%;
+    background-color: hsla(0, 0%, 100%, 0.4);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+    margin: 0px;
+}
+
+div.right_bg {
+    background-image: url(../image/angle-right-solid.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: hsla(0, 0%, 100%, 0.4);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+    margin: 0px;
+}
+
+div.circle_position {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    z-index: 2;
+}
+
+div.circle_fill {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 5px;
+    width: 40px;
+}
+
+div.circle_transparent {
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 5px;
+    height: 5px;
+    width: 40px;
+}
+
+div.circle_group {
+    position: absolute;
+    left: -130px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+article.article_width {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.commodity_bg {
+    /* border: 1px solid red; */
+    width: 160px;
+    margin: 0px;
+}
+
+div.commodity_sqare {
+    width: 160px;
+    height: 160px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+div.commodity_sqare>img{
+    width: 100%;
+}
+
+h4.commodity_itemname {
+    color: #202020;
+    font-size: 1rem;
+ 
+}
+
+span.commodity_itemen {
+    color: #808080;
+    font-size: .5rem;
+    font-family: gensen_r;
+}

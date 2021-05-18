@@ -1,0 +1,293 @@
+/* 以下是咖啡種類 */
+
+nav.nav_coffee {
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    background-color: #202020cc;
+    z-index: 1;
+}
+
+div.nav_coffeewidth {
+    width: 60%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.nav_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e7e7e7;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+a.nav_icon:hover {
+    color: #FBB03B;
+}
+
+div.nav_coffee_doubleEspresso {
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(../image/nav_coffee_doubleEspresso.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+div.nav_coffee_americanCoffee {
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(../image/nav_coffee_americanCoffee.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+
+div.nav_coffee_flatWhite {
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(../image/nav_coffee_flatWhite.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+
+div.nav_coffee_cappuccino {
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(../image/nav_coffee_cappuccino.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+
+div.nav_coffee_latte {
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(../image/nav_coffee_latte.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+
+/* 以上是咖啡種類 */
+
+/* 以下是菜單內容 */
+
+div.height{
+    height: 240px;
+}
+
+div.shopping_flout{
+    /* border: 1px solid red; */
+    position: fixed;
+    /* z-index: 4; */
+    bottom: 20px;
+    right: 7%;
+}
+
+div.shopping_bg {
+    /* border: 1px solid blue; */
+    height: 380px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px hsla(0, 0%, 16%, 0.5);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0px;
+    /* margin-left: 30px; */
+}
+
+div.shopping_titlebox {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px dashed #202020;
+}
+
+div.shopping_footerbox {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px dashed #202020;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.shopping_footerbox_size {
+    width: 80%;
+}
+
+div.shopping_footerbox_size>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.shopping_footerbox_size>div>span {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #202020;
+}
+
+span.shopping_title {
+    /* border: 1px solid red; */
+    font-size: 1.3rem;
+    color: #202020;
+}
+
+div.shopping_contentbox {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.shopping_contentbox>img {
+    width: 20%;
+}
+
+div.shopping_contentbox>span {
+    margin-top: 10px;
+    text-align: center;
+    color: #808080;
+    line-height: 1rem;
+    font-size: .8rem;
+}
+
+div.order_list {
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: 0px;
+    margin-left: 7%;
+}
+
+h2.coffee_classificationtitle {
+    color: #202020;
+    font-size: 1.3rem;
+}
+
+/* h2.coffee_classificationtitle:first-child {
+    color: #202020;
+    margin-top: 250px;
+    font-size: 1.3rem;
+} */
+
+h2.coffee_classificationtitle::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #FBB03B;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+article.article_width {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+div.commodity_bg {
+    /* border: 1px solid red; */
+    padding: 20px;
+    margin: 0px 50px 60px 0px;
+
+    /* margin: 30px; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px hsla(0, 0%, 16%, 0.3);
+}
+
+div.commodity_sqare {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    background: #FFCA87;
+    display: flex;
+    margin: 0px;
+}
+
+img.commodity_sqareitem {
+    height: 160px;
+    filter: drop-shadow(0px 10px 10px hsla(24, 85%, 18%, 0.5))
+}
+
+h4.commodity_itemname {
+    color: #202020;
+    font-size: 1rem;
+}
+
+span.commodity_itemen {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+span.commodity_itemen>div {
+    margin: 0px;
+}
+
+span.size {
+    font-size: .8rem;
+    color: #202020;
+    padding: 0px 5px 0px 0px;
+}
+
+span.size2 {
+    font-size: .8rem;
+    color: #202020;
+    padding: 0px 5px 0px 20px;
+}
+
+span.price {
+    font-size: 1rem;
+    color: #FBB03B;
+}
+
+div.list_word {
+    margin: 15px 0px;
+}
+
+button.open {
+    background: none;
+    border: 3px solid #fbb03b;
+    font-size: 1rem;
+    padding: .5em;
+    width: 160px;
+    border-radius: 3.5em;
+    color: #fbb03b;
+    cursor: pointer;
+}
+
+button.shopping_puy {
+    background: #808080;
+    border:none;
+    /* border: 3px solid #fbb03b; */
+    font-size: 1.2rem;
+    width: 100%;
+    padding: .5em 0px;
+    border-radius: 3.5em;
+    color: #ffffff;
+    cursor:default;
+}

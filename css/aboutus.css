@@ -1,0 +1,272 @@
+div.height{
+    height: 100px;
+}
+
+div.banner_all {
+    /* border: 1px solid rgb(0, 255, 149); */
+    width: 100%;
+    height: 350px;
+    position: relative;
+    margin-bottom: 350px;
+}
+
+div.banner_top {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+div.banner_top>img {
+    max-height: 100%;
+}
+
+h2.banner_title {
+    position: absolute;
+    bottom: 35%;
+    color: white;
+    font-size: 1.5rem;
+    left: 46%;
+    z-index: 2;
+}
+
+div.grind_black {
+    margin: 0px;
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 420px;
+    background-image: url(../image/aboutUs_image01.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -550px -350px;
+}
+
+div.banner_grind {
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    z-index: 1;
+    width: 60%;
+    /* border: 1px solid rgb(0, 153, 255); */
+    display: flex;
+    align-items: flex-end;
+}
+
+p.banner_content {
+    color: #202020;
+    margin: 0px;
+    margin-left: 4%;
+    font-size: .8rem;
+    line-height: 1.6rem;
+    font-family: gensen_r;
+}
+
+div.four_step {
+    display: flex;
+    /* margin-left: 20vw; */
+}
+
+div.four_step>div {
+    margin: 0;
+}
+
+span.four_step_title {
+    /* border: 1px solid rgb(0, 153, 255); */
+    color: #202020;
+    font-size: 1.5rem;
+    margin: 0;
+    padding-left: 20vw;
+    padding-right: 1vw;
+}
+
+div.four_step>div::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin: 5px 0 20px 0;
+    background: #FBB03B;
+    border-radius: 5px;
+}
+
+div.four_stepbg1 {
+    width: 180px;
+    height: 320px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* background-color: tomato; */
+    background-image: url(../image/aboutUs_image02.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+div.four_stepbg2 {
+    width: 180px;
+    height: 320px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* background-color: tomato; */
+    background-image: url(../image/aboutUs_image03.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+div.four_stepbg3 {
+    width: 180px;
+    height: 320px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* background-color: tomato; */
+    background-image: url(../image/aboutUs_image04.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+div.four_stepbg4 {
+    width: 180px;
+    height: 320px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    /* background-color: tomato; */
+    background-image: url(../image/aboutUs_image05.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+span.four_step_content {
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    left: 65%;
+    top: 5%;
+    filter: drop-shadow(0px 0px 10px hsla(0, 0%, 0%, 0.8))
+}
+
+span.four_step_num {
+    color: hsla(0, 0%, 100%, 0.3);
+    font-size: 6rem;
+    position: absolute;
+    top: 75%;
+    left: -5%;
+}
+
+div.four_step_width {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    margin-bottom: 230px;
+    width: 60%;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+div.four_down {
+    align-self: flex-end;
+}
+
+div.four_step_width>div {
+    margin: 0px;
+}
+
+div.bt_spanflex {
+    margin: 0px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.bt_spanflex>span {
+    margin: 0px;
+    color: #202020;
+}
+
+div.bt_spanflex>span:first-child {
+    font-size: 1.5rem;
+}
+
+div.bt_spanflex>span:last-child {
+    margin-top: 20px;
+    font-size: .8rem;
+    line-height: 1.6rem;
+    font-family: gensen_r;
+}
+
+div.two_block {
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 550px;
+    margin: 0px;
+    background-image: url(../image/aboutUs_image06.png);
+    /* background-repeat: no-repeat; */
+}
+
+div.two_block_first {
+    /* border: 1px solid red; */
+    /* width: 60%; */
+    display: flex;
+    left: 20%;
+}
+
+div.bt_spanflex2 {
+    margin: 0px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+div.bt_spanflex2>span {
+    margin: 0px;
+    color: #202020;
+}
+
+div.bt_spanflex2>span:first-child {
+    font-size: 1.5rem;
+}
+
+div.bt_spanflex2>span:last-child {
+    margin-top: 20px;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    font-family: gensen_r;
+}
+
+div.two_block2 {
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 550px;
+    margin: 0px;
+    background-image: url(../image/aboutUs_image07.png);
+    /* background-repeat: no-repeat; */
+}
+
+div.two_block_first2 {
+    margin: 0px;
+    /* border: 1px solid red; */
+    /* width: 60%; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0%;
+    right: 0px;
+    /* left: 20%; */
+}
+
+div.two_block_all {
+    /* border: 1px solid rgb(4, 0, 255); */
+    height: 950px;
+    position: relative;
+    width: 60%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    margin-bottom: 200px;
+}

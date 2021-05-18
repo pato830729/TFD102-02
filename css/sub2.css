@@ -1,0 +1,169 @@
+/* 以下是訂閱種類 */
+
+nav.nav_coffee {
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    background-color: #202020cc;
+    z-index: 1;
+}
+
+div.height{
+    height: 240px;
+}
+
+div.nav_coffeewidth {
+    width: 60%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.nav_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e7e7e7;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+a.nav_icon:hover {
+    color: #FBB03B;
+}
+
+div.sub_boutique {
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(../image/sub_boutique_icon.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    margin-left: 4px;
+}
+
+div.sub_tiny {
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(../image/sub_tiny_icon.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+
+div.sub_style {
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(../image/sub_style_icon.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    margin-left: 4px;
+}
+
+div.sub_qa {
+    width: 60px;
+    height: 50px;
+    background-size: contain;
+    background-image: url(../image/sub_qa_icon.png);
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+/* 以上是訂閱種類 */
+
+/* 以下是菜單內容 */
+
+section.section_width {
+    width: 60%;
+    /* margin-top: 30px; */
+}
+
+h2.coffee_classificationtitle {
+    color: #202020;
+    /* margin-top: 30px; */
+    font-size: 1.3rem;
+}
+
+h2.coffee_classificationtitle::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #FBB03B;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+article.article_width {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+div.commodity_bg {
+    /* border: 1px solid red; */
+    width: 160px;
+    margin: 0px;
+}
+
+div.commodity_sqare {
+    width: 160px;
+    height: 160px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+img.commodity_sqareitem {
+    width: 100%;
+}
+
+h4.commodity_itemname {
+    color: #202020;
+}
+
+span.commodity_itemen {
+    color: #808080;
+    font-size: .5rem;
+    font-family: gensen_r;
+}
+
+article.qa_width {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+div.qa_content {
+    display: flex;
+    flex-direction: column;
+}
+
+div.qa_content>span {
+    margin: 0px;
+}
+
+div.qa_content>span:first-child {
+    color: #202020;
+    font-size: 1.2rem;
+}
+
+div.qa_content>span:last-child{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    color: #202020;
+    font-size: .8rem;
+    font-family: gensen_r;
+    line-height: 1.2rem;
+}
+
+/* 以上是菜單內容 */
