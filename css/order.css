@@ -1,5 +1,9 @@
 /* 以下是咖啡種類 */
 
+a {
+    text-decoration: none;
+}
+
 nav.nav_coffee {
     width: 100%;
     position: fixed;
@@ -14,6 +18,46 @@ div.nav_coffeewidth {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1235px) {
+    div.nav_coffeewidth {
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div.nav_coffeewidth {
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    div.nav_coffeewidth {
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 575px) {
+    div.nav_coffeewidth {
+        width: 90%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 a.nav_icon {
@@ -36,6 +80,13 @@ div.nav_coffee_doubleEspresso {
     background-image: url(../image/nav_coffee_doubleEspresso.png);
     background-repeat: no-repeat;
     margin-bottom: 5px;
+    transition: transform .2s ease;
+}
+
+a.nav_icon:hover div.nav_coffee_doubleEspresso, a.nav_icon:focus div.nav_coffee_doubleEspresso {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 div.nav_coffee_americanCoffee {
@@ -46,6 +97,13 @@ div.nav_coffee_americanCoffee {
     background-repeat: no-repeat;
     margin-bottom: 5px;
     margin-left: 8px;
+    transition: transform .2s ease;
+}
+
+a.nav_icon:hover div.nav_coffee_americanCoffee, a.nav_icon:focus div.nav_coffee_americanCoffee {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 div.nav_coffee_flatWhite {
@@ -56,6 +114,13 @@ div.nav_coffee_flatWhite {
     background-repeat: no-repeat;
     margin-bottom: 5px;
     margin-left: 8px;
+    transition: transform .2s ease;
+}
+
+a.nav_icon:hover div.nav_coffee_flatWhite, a.nav_icon:focus div.nav_coffee_flatWhite {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 div.nav_coffee_cappuccino {
@@ -66,6 +131,13 @@ div.nav_coffee_cappuccino {
     background-repeat: no-repeat;
     margin-bottom: 5px;
     margin-left: 8px;
+    transition: transform .2s ease;
+}
+
+a.nav_icon:hover div.nav_coffee_cappuccino, a.nav_icon:focus div.nav_coffee_cappuccino {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 div.nav_coffee_latte {
@@ -76,23 +148,46 @@ div.nav_coffee_latte {
     background-repeat: no-repeat;
     margin-bottom: 5px;
     margin-left: 8px;
+    transition: transform .2s ease;
+}
+
+a.nav_icon:hover div.nav_coffee_latte, a.nav_icon:focus div.nav_coffee_latte {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 /* 以上是咖啡種類 */
 
 /* 以下是菜單內容 */
 
-div.height{
+div.height {
     height: 240px;
 }
 
-div.shopping_flout{
+div.shopping_flout {
     /* border: 1px solid red; */
     position: fixed;
     /* z-index: 4; */
-    bottom: 20px;
-    right: 7%;
+    top: 240px;
+    right: 20%;
 }
+
+@media (min-width: 992px) and (max-width: 1235px) {
+    div.shopping_flout {
+        /* border: 1px solid red; */
+        position: fixed;
+        /* z-index: 4; */
+        top: 240px;
+        right: 10%;
+    }
+}
+
+@media (max-width: 991px) {
+    div.shopping_flout {
+      display: none;
+    }
+  }
 
 div.shopping_bg {
     /* border: 1px solid blue; */
@@ -173,9 +268,49 @@ div.shopping_contentbox>span {
 
 div.order_list {
     /* border: 1px solid red; */
-    width: 60%;
+    width: 40%;
     margin: 0px;
-    margin-left: 7%;
+    margin-left: 20%;
+}
+
+@media (min-width: 1236px) and (max-width: 1620px) {
+    div.order_list {
+        width: 35%;
+        margin: 0px;
+        margin-left: 20%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1235px) {
+    div.order_list {
+        width: 45%;
+        margin: 0px;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div.order_list {
+        width: 80%;
+        margin: 0px;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    div.order_list {
+        width: 80%;
+        margin: 0px;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 575px) {
+    div.order_list {
+        width: 90%;
+        margin: 0px;
+        margin-left: 5%;
+    }
 }
 
 h2.coffee_classificationtitle {
@@ -201,19 +336,72 @@ h2.coffee_classificationtitle::after {
 
 article.article_width {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    /* display: flex;
-    flex-wrap: wrap; */
-    margin-top: 40px;
-    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+@media (min-width: 1236px) and (max-width: 1620px) {
+    article.article_width {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1235px) {
+    article.article_width {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 830px) and (max-width: 991px) {
+    article.article_width {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        place-items: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 829px) {
+    article.article_width {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 575px) {
+    article.article_width {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        place-items: center;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
 }
 
 div.commodity_bg {
     /* border: 1px solid red; */
     padding: 20px;
-    margin: 0px 50px 60px 0px;
-
+    margin: 0px 0px 100px 0px;
     /* margin: 30px; */
     border-radius: 10px;
     box-shadow: 0px 0px 15px hsla(0, 0%, 16%, 0.3);
@@ -230,7 +418,14 @@ div.commodity_sqare {
 
 img.commodity_sqareitem {
     height: 160px;
-    filter: drop-shadow(0px 10px 10px hsla(24, 85%, 18%, 0.5))
+    filter: drop-shadow(0px 10px 10px hsla(24, 85%, 18%, 0.5));
+    transition: transform .3s ease;
+}
+
+div.commodity_bg:hover img.commodity_sqareitem, div.commodity_bg:focus img.commodity_sqareitem {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 h4.commodity_itemname {
@@ -282,12 +477,12 @@ button.open {
 
 button.shopping_puy {
     background: #808080;
-    border:none;
+    border: none;
     /* border: 3px solid #fbb03b; */
     font-size: 1.2rem;
     width: 100%;
     padding: .5em 0px;
     border-radius: 3.5em;
     color: #ffffff;
-    cursor:default;
+    cursor: default;
 }

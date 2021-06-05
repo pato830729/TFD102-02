@@ -1,7 +1,6 @@
-div.height{
+div.height {
     height: 100px;
 }
-
 
 div.map {
     position: relative;
@@ -11,9 +10,29 @@ div.map {
     overflow: hidden;
 }
 
+
+@media (max-width: 700px) {
+    div.map {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        height: 900px;
+        overflow: hidden;
+    }
+}
+
 iframe {
     position: absolute;
     left: -75%;
+    top: -50%;
+}
+
+@media (max-width: 700px) {
+    iframe {
+        position: absolute;
+        top: -20%;
+        left: -50%;
+    }
 }
 
 div.form_width {
@@ -22,6 +41,34 @@ div.form_width {
     justify-content: flex-end;
     position: absolute;
     right: 20%;
+    z-index: 1;
+}
+
+@media (min-width: 992px) and (max-width: 1235px) {
+    div.form_width {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 10%;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 991px) {
+    div.form_width {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 35px;
+    }
+}
+
+@media (max-width: 700px) {
+    div.form_width {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 35px;
+    }
 }
 
 form.form_bg {

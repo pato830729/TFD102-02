@@ -23,6 +23,7 @@ nav.header_name {
     position: fixed;
     top: 0px;
     width: 100%;
+    height: 100px;
     background-color: #202020;
     z-index: 4;
 }
@@ -36,7 +37,7 @@ a.nav_link {
     font-size: .8rem;
 }
 
-a.now_page{
+a.now_page {
     color: #FBB03B;
 }
 
@@ -46,7 +47,7 @@ li.logo_link {
     align-items: center;
 }
 
-img.header_logosize{
+img.header_logosize {
     width: 60px;
 }
 
@@ -67,6 +68,23 @@ ul.header_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1235px) {
+    ul.header_nav {
+        list-style: none;
+        width: 80%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 991px) {
+    ul.header_nav {
+        display: none;
+    }
 }
 
 ul.header_nav>li {
@@ -91,7 +109,6 @@ svg.svgLogo a:hover {
 /* 以上是分頁導覽 */
 
 /* 以上是header */
-
 
 /* 以下是footer */
 
@@ -128,9 +145,9 @@ div.logo_address {
     align-items: center;
 }
 
-img.footer_logosize{
+img.footer_logosize {
     /* border: 1px solid red; */
-    width:100px;
+    width: 100px;
 }
 
 div.logo_address>div {

@@ -1,4 +1,9 @@
 /* 以下是訂閱種類 */
+a {
+    text-decoration: none;
+}
+
+
 
 nav.nav_coffee {
     width: 100%;
@@ -19,6 +24,48 @@ div.nav_coffeewidth {
     justify-content: space-between;
     align-items: center;
 }
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    div.nav_coffeewidth {
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div.nav_coffeewidth {
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    div.nav_coffeewidth {
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 575px) {
+    div.nav_coffeewidth {
+        width: 90%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 
 a.nav_icon {
     display: flex;
@@ -81,6 +128,33 @@ section.section_width {
     /* margin-top: 30px; */
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    section.section_width {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.section_width {
+        width: 80%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    section.section_width {
+        width: 80%;
+    }
+}
+
+@media (max-width: 575px) {
+    section.section_width {
+        width: 80%;
+    }
+}
+
+
+
+
 h2.coffee_classificationtitle {
     color: #202020;
     /* margin-top: 30px; */
@@ -102,21 +176,25 @@ article.article_width {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* display: flex;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 80px;
 }
 
 div.commodity_bg {
     /* border: 1px solid red; */
-    width: 160px;
-    margin: 0px;
+    width: 12vw;
+    min-width: 180px;
+    height: 12vw;
+    min-height: 180px;
+    margin: 0px 0px 40px 0px;
 }
 
 div.commodity_sqare {
-    width: 160px;
-    height: 160px;
+    width: 12vw;
+    min-width: 180px;
+    height: 12vw;
+    min-height: 180px;
     /* border: 1px solid red; */
     border-radius: 10px;
     margin-bottom: 15px;
@@ -125,10 +203,23 @@ div.commodity_sqare {
 
 img.commodity_sqareitem {
     width: 100%;
+    transition: transform .3s ease;
 }
+
+div.commodity_bg:hover img.commodity_sqareitem, div.commodity_bg:focus img.commodity_sqareitem {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+}
+
 
 h4.commodity_itemname {
     color: #202020;
+}
+
+div.commodity_bg:hover h4.commodity_itemname, div.commodity_bg:focus h4.commodity_itemname{
+    color: #FBB03B;
+    font-size: 1.1rem;
 }
 
 span.commodity_itemen {

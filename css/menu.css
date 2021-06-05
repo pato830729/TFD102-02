@@ -1,10 +1,10 @@
 /* 以下是咖啡種類 */
-div.height{
+
+div.height {
     height: 240px;
 }
 
-
-a{
+a {
     text-decoration: none;
 }
 
@@ -22,6 +22,46 @@ div.nav_coffeewidth {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1235px) {
+    div.nav_coffeewidth {
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div.nav_coffeewidth {
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    div.nav_coffeewidth {
+        width: 80%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 575px) {
+    div.nav_coffeewidth {
+        width: 90%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 a.nav_icon {
@@ -44,6 +84,13 @@ div.nav_coffee_doubleEspresso {
     background-image: url(../image/nav_coffee_doubleEspresso.png);
     background-repeat: no-repeat;
     margin-bottom: 5px;
+    transition: transform .2s ease;
+}
+
+a.nav_icon:hover div.nav_coffee_doubleEspresso, a.nav_icon:focus div.nav_coffee_doubleEspresso {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 div.nav_coffee_americanCoffee {
@@ -54,6 +101,13 @@ div.nav_coffee_americanCoffee {
     background-repeat: no-repeat;
     margin-bottom: 5px;
     margin-left: 8px;
+    transition: transform .2s ease;
+}
+
+a.nav_icon:hover div.nav_coffee_americanCoffee, a.nav_icon:focus div.nav_coffee_americanCoffee {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 div.nav_coffee_flatWhite {
@@ -64,7 +118,15 @@ div.nav_coffee_flatWhite {
     background-repeat: no-repeat;
     margin-bottom: 5px;
     margin-left: 8px;
+    transition: transform .2s ease;
 }
+
+a.nav_icon:hover div.nav_coffee_flatWhite, a.nav_icon:focus div.nav_coffee_flatWhite {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+}
+
 
 div.nav_coffee_cappuccino {
     width: 60px;
@@ -74,6 +136,13 @@ div.nav_coffee_cappuccino {
     background-repeat: no-repeat;
     margin-bottom: 5px;
     margin-left: 8px;
+    transition: transform .2s ease;
+}
+
+a.nav_icon:hover div.nav_coffee_cappuccino, a.nav_icon:focus div.nav_coffee_cappuccino {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 div.nav_coffee_latte {
@@ -84,6 +153,13 @@ div.nav_coffee_latte {
     background-repeat: no-repeat;
     margin-bottom: 5px;
     margin-left: 8px;
+    transition: transform .2s ease;
+}
+
+a.nav_icon:hover div.nav_coffee_latte, a.nav_icon:focus div.nav_coffee_latte {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 /* 以上是咖啡種類 */
@@ -93,6 +169,30 @@ div.nav_coffee_latte {
 section.section_width {
     width: 60%;
     /* margin-top: 30px; */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    section.section_width {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.section_width {
+        width: 80%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    section.section_width {
+        width: 80%;
+    }
+}
+
+@media (max-width: 575px) {
+    section.section_width {
+        width: 80%;
+    }
 }
 
 h2.coffee_classificationtitle {
@@ -113,41 +213,93 @@ h2.coffee_classificationtitle::after {
 
 article.article_width {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     margin-top: 30px;
     margin-bottom: 80px;
+    place-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+    article.article_width {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    article.article_width {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    article.article_width {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 575px) {
+    article.article_width {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
 
 div.commodity_bg {
     /* border: 1px solid red; */
-    width: 160px;
-    margin: 0px 29px 40px 0px;
+    width: 12vw;
+    min-width: 180px;
+    height: 12vw;
+    min-height: 180px;
+    margin: 0px 0px 100px 0px;
 }
 
 div.commodity_sqare {
-    width: 160px;
-    height: 160px;
+    width: 12vw;
+    min-width: 180px;
+    height: 12vw;
+    min-height: 180px;
     border-radius: 10px;
     background: #FFCA87;
     margin-bottom: 15px;
     display: flex;
 }
-img.commodity_sqareitem {
-    height:160px;
-    filter: drop-shadow(0px 10px 10px hsla(24, 85%, 18%, 0.5))
 
-} 
+img.commodity_sqareitem {
+    height: 12vw;
+    min-height: 180px;
+    /* position: absolute; */
+    filter: drop-shadow(0px 10px 10px hsla(24, 85%, 18%, 0.5));
+    transition: transform .3s ease;
+}
+
+div.commodity_bg:hover img.commodity_sqareitem, div.commodity_bg:focus img.commodity_sqareitem {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+}
 
 h4.commodity_itemname {
     color: #202020;
 }
 
+div.commodity_bg:hover h4.commodity_itemname, div.commodity_bg:focus h4.commodity_itemname{
+    color: #FBB03B;
+    font-size: 1.1rem;
+}
+
 span.commodity_itemen {
     color: #808080;
     font-size: .5rem;
+    font-family: gensen_r;
+}
+
+div.commodity_bg:hover span.commodity_itemen, div.commodity_bg:focus span.commodity_itemen{
+    color: #202020;
+    font-size: .8rem;
     font-family: gensen_r;
 }
 

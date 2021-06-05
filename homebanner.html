@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/homebanner.css">
+</head>
+
+<body>
+    <img class="scene" data-modifier="30" src="./image/homeBanner_00.png">
+    <img class="scene" data-modifier="26" src="./image/homeBanner_01.png">
+    <img class="scene" data-modifier="22" src="./image/homeBanner_02.png">
+    <img class="scene" data-modifier="30" src="./image/homeBanner_03.png">
+    <img class="scene" data-modifier="20" src="./image/homeBanner_04.png">
+    <img class="scene" data-modifier="8" src="./image/homeBanner_05.png">
+    <img class="scene" data-modifier="12" src="./image/homeBanner_06.png">
+    <img class="scene" data-modifier="22" src="./image/homeBanner_07.png">
+    
+
+
+
+    <script src="./js/basicScroll.min.js"></script>
+    <script>
+        document.querySelectorAll('.scene').forEach((elem) => {
+
+            const modifier = elem.getAttribute('data-modifier')
+
+            basicScroll.create({
+                elem: elem,
+                from: 0,
+                to: 519,
+                direct: true,
+                props: {
+                    '--translateY': {
+                        from: '0',
+                        to: `${10 * modifier}px`,
+                    }
+                }
+            }).start()
+
+        })
+    </script>
+</body>
+
+</html>
