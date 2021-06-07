@@ -1,13 +1,13 @@
-.bannerheight>img:last-child{
-    width: 100%;
-    height: auto;
+.parallax {
+  display: block;
+  height: 50vw;
+  position: relative;
 }
 
+.scene {
+  position: absolute;
+  width: 100%;
+  transform: translateY(var(--translateY));
+  will-change: transform;
+}
 
-  .scene {
-    position: absolute;
-    width: 100%;
-    transform: translateY(var(--translateY));
-    will-change: transform;
-    
-  }
