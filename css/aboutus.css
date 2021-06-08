@@ -98,10 +98,10 @@ div.grind_black {
     /* border: 1px solid red; */
     width: 300px;
     height: 420px;
-    background-image: url(../image/aboutUs_image01.png);
+    /* background-image: url(../image/aboutUs_image01.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: -550px -350px;
+    background-position: -550px -350px; */
     margin: 0px;
     margin-right: 50px;
 }
@@ -111,10 +111,10 @@ div.grind_black {
         /* border: 1px solid red; */
         width: 300px;
         height: 420px;
-        background-image: url(../image/aboutUs_image01.png);
+        /* background-image: url(../image/aboutUs_image01.png);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: -550px -350px;
+        background-position: -550px -350px; */
         margin: 0px;
         margin-bottom: 80px;
     }
@@ -373,7 +373,7 @@ div.two_block {
     /* background-repeat: no-repeat; */
 }
 
-@media (max-width: 991px) {
+@media (min-width: 461px) and (max-width: 991px) {
     div.two_block {
         /* border: 1px solid red; */
         width: 350px;
@@ -381,6 +381,18 @@ div.two_block {
         margin: auto;
         background-image: url(../image/aboutUs_image06.png);
         /* background-repeat: no-repeat; */
+    }
+}
+
+@media (max-width: 460px) {
+    div.two_block {
+        /* border: 1px solid red; */
+        width: 210px;
+        height: 330px;
+        margin: auto;
+        background-image: url(../image/aboutUs_image06.png);
+        /* background-repeat: no-repeat; */
+        background-size: contain;
     }
 }
 
@@ -455,14 +467,26 @@ div.two_block2 {
     /* background-repeat: no-repeat; */
 }
 
-@media (max-width: 991px) {
+@media (min-width: 461px) and (max-width: 991px) {
     div.two_block2 {
         /* border: 1px solid red; */
-        width: 350px;
-        height: 550px;
-        margin: auto;
-        background-image: url(../image/aboutUs_image07.png);
-        /* background-repeat: no-repeat; */
+    width: 350px;
+    height: 550px;
+    margin: 0px;
+    background-image: url(../image/aboutUs_image07.png);
+    /* background-repeat: no-repeat; */
+    }
+}
+
+@media (max-width: 460px) {
+    div.two_block2 {
+        /* border: 1px solid red; */
+    width: 210px;
+    height: 330px;
+    margin: auto;
+    background-image: url(../image/aboutUs_image07.png);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
     }
 }
 

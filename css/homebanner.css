@@ -1,7 +1,7 @@
 .parallax {
+  /* border: 1px solid blue; */
   display: block;
-  height: 50vw;
-  position: relative;
+  
 }
 
 .scene {
@@ -10,4 +10,6 @@
   transform: translateY(var(--translateY));
   will-change: transform;
 }
+
+
 
