@@ -253,7 +253,6 @@ nav.show .about, nav.show .social, nav.show ul.sub {
 
 .burger_nav ul.main li a {
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -291,7 +290,6 @@ nav.show .about, nav.show .social, nav.show ul.sub {
 
 .burger_nav .about p {
   color: #ffffff;
-  font-family: "Spectral", serif;
   font-size: 1.05rem;
   letter-spacing: 0.5px;
   line-height: 170%;
@@ -376,7 +374,6 @@ nav.show .about, nav.show .social, nav.show ul.sub {
 
 .burger_nav ul.sub li a {
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
   font-size: 0.9rem;
   text-decoration: none;
@@ -419,7 +416,6 @@ nav.show .about, nav.show .social, nav.show ul.sub {
   margin: 0 auto;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Noto Serif TC', serif;
 }
 
 /* 以下是header */

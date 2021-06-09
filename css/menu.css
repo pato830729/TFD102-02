@@ -368,13 +368,13 @@ div.commodity_bg:hover h4.commodity_itemname, div.commodity_bg:focus h4.commodit
 span.commodity_itemen {
     color: #808080;
     font-size: .5rem;
-    font-family: gensen_r;
+    
 }
 
 div.commodity_bg:hover span.commodity_itemen, div.commodity_bg:focus span.commodity_itemen {
     color: #202020;
     font-size: .8rem;
-    font-family: gensen_r;
+    
 }
 
 /* 以上是菜單內容 */

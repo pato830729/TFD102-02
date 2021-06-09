@@ -254,7 +254,7 @@ div.commodity_bg:hover h4.commodity_itemname, div.commodity_bg:focus h4.commodit
 span.commodity_itemen {
     color: #808080;
     font-size: .5rem;
-    font-family: gensen_r;
+    
 }
 
 article.qa_width {
@@ -282,7 +282,7 @@ div.qa_content>span:last-child{
     margin-bottom: 60px;
     color: #202020;
     font-size: .8rem;
-    font-family: gensen_r;
+    
     line-height: 1.2rem;
 }
 

@@ -1,18 +1,7 @@
-@font-face {
-    font-family: 'gensen_b';
-    src: url('../fonts/GenSenRounded-B.ttc');
-}
-
-@font-face {
-    font-family: 'gensen_r';
-    src: url('../fonts/GenSenRounded-R.ttc');
-}
-
 * {
     margin: 0 auto;
     padding: 0px;
     box-sizing: border-box;
-    font-family: gensen_b, "Microsoft JhengHei", PingFang;
 }
 
 footer.footer_bg {
@@ -133,7 +122,7 @@ span.span_address {
     color: white;
     margin: 0px;
     margin-top: 10px;
-    font-family: gensen_r;
+    
     font-size: .8rem;
 }
 
@@ -180,7 +169,7 @@ table.table_link {
 span.project_statement {
     /* border: 1px solid red; */
     color: white;
-    font-family: gensen_r;
+    
     font-size: .3rem;
 }
 
@@ -192,7 +181,7 @@ table.table_link td {
 a.footer_link {
     color: #E7E7E7;
     text-decoration: none;
-    font-family: gensen_r;
+    
     font-size: .8rem;
 }
 

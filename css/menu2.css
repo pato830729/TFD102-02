@@ -11,7 +11,7 @@ h2.coffee_name {
 h5.coffee_nameen {
     color: #808080;
     font-size: 1.2rem;
-    font-family: gensen_r;
+    
 }
 
 span.size {
@@ -66,7 +66,6 @@ div.desciption_top>div {
 }
 
 p.desciption_content1 {
-    /* font-family: gensen_r; */
     color: #202020;
     padding-top: 3vh;
     font-size: 1rem;
@@ -75,7 +74,6 @@ p.desciption_content1 {
 
 @media (max-width: 991px) {
     p.desciption_content1 {
-        /* font-family: gensen_r; */
         color: #202020;
         padding-top: 3vh;
         font-size: 1rem;
@@ -85,7 +83,6 @@ p.desciption_content1 {
 }
 
 p.desciption_content2 {
-    /* font-family: gensen_r; */
     color: #808080;
     font-size: 1rem;
     line-height: 1.2rem;
@@ -93,7 +90,6 @@ p.desciption_content2 {
 
 @media (max-width: 991px) {
     p.desciption_content2 {
-        /* font-family: gensen_r; */
         color: #808080;
         font-size: 1rem;
         line-height: 1.2rem;
@@ -419,7 +415,6 @@ div.guess_items>div {
     /* width: 700px; */
     display: flex;
     justify-content: space-between;
-    
 }
 
 @media (min-width: 800px) and (max-width: 1520px) {
@@ -431,14 +426,18 @@ div.guess_items>div {
     }
 }
 
+.iScrollHorizontalScrollbar, .iScrollLoneScrollbar {
+    display: none !important;
+}
+
 @media (max-width: 799px) {
     div.guess_items>div {
-         /* border: 1px solid red; */
-         margin: 0px;
-         display: flex;
-         justify-content: space-between;
-         position: absolute;
-         top: 80px;
-         /* padding-right: 10%; */
+        /* border: 1px solid red; */
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 80px;
+        /* padding-right: 10%; */
     }
 }
