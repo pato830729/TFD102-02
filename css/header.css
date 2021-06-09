@@ -452,6 +452,7 @@ a.nav_link {
   text-decoration: none;
   width: 100%;
   font-size: .8rem;
+  font-weight: bold;
 }
 
 a.now_page {

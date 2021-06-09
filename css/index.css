@@ -21,9 +21,6 @@ main {
     width: 100%;
 }
 
-div {
-    display: block;
-}
 
 div.news_title_more {
     display: flex;
@@ -38,6 +35,7 @@ div.news_title_more>a {
     padding-right: 20vw;
     color: #508AE0;
     font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 @media (min-width: 992px) and (max-width: 1235px) {
@@ -87,6 +85,7 @@ span.four_step_title {
     margin: 0;
     padding-left: 20vw;
     padding-right: 1vw;
+    font-weight: bold;
 }
 
 @media (min-width: 992px) and (max-width: 1235px) {
