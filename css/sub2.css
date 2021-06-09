@@ -174,11 +174,40 @@ h2.coffee_classificationtitle::after {
 
 article.article_width {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 80px;
+    place-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1600px) {
+    article.article_width {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    article.article_width {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 767px) {
+    article.article_width {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 539px) {
+    article.article_width {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
 
 div.commodity_bg {
@@ -187,7 +216,7 @@ div.commodity_bg {
     min-width: 180px;
     height: 12vw;
     min-height: 180px;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 100px 0px;
 }
 
 div.commodity_sqare {

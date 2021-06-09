@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+
 /*  COLORS
 ========================================== */
 
@@ -412,21 +414,12 @@ nav.show .about, nav.show .social, nav.show ul.sub {
   visibility: visible;
 }
 
-@font-face {
-  font-family: 'gensen_b';
-  src: url('../fonts/GenSenRounded-B.ttc');
-}
-
-@font-face {
-  font-family: 'gensen_r';
-  src: url('../fonts/GenSenRounded-R.ttc');
-}
 
 * {
   margin: 0 auto;
   padding: 0px;
   box-sizing: border-box;
-  font-family: gensen_b, "Microsoft JhengHei", PingFang;
+  font-family: 'Noto Serif TC', serif;
 }
 
 /* 以下是header */

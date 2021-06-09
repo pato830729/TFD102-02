@@ -76,11 +76,11 @@ p.desciption_content1 {
 @media (max-width: 991px) {
     p.desciption_content1 {
         /* font-family: gensen_r; */
-    color: #202020;
-    padding-top: 3vh;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    margin-bottom: 30px;
+        color: #202020;
+        padding-top: 3vh;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin-bottom: 30px;
     }
 }
 
@@ -93,11 +93,11 @@ p.desciption_content2 {
 
 @media (max-width: 991px) {
     p.desciption_content2 {
-     /* font-family: gensen_r; */
-     color: #808080;
-     font-size: 1rem;
-     line-height: 1.2rem;
-     margin-bottom: 30px;
+        /* font-family: gensen_r; */
+        color: #808080;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin-bottom: 30px;
     }
 }
 
@@ -157,7 +157,6 @@ main>div.desciptionimg_size {
     }
 }
 
-
 @media (max-width: 991px) {
     main>div.desciptionimg_size {
         /* border: 1px solid blue; */
@@ -202,7 +201,6 @@ img.desciptionimg {
     filter: drop-shadow(0px 20px 20px hsla(24, 85%, 18%, 0.5))
 }
 
-
 div.down_desciption {
     margin-top: 30px;
     margin-bottom: 80px;
@@ -240,12 +238,26 @@ div.down_desciption {
     }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 800px) and (max-width: 991px) {
     div.down_desciption {
         margin-top: 30px;
         margin-bottom: 80px;
         margin-right: 10%;
         width: 80%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 799px) {
+    div.down_desciption {
+        margin-top: 30px;
+        margin-bottom: 80px;
+        margin-right: 10%;
+        width: 100%;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
@@ -275,7 +287,7 @@ div.guess_box {
     }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 800px) and (max-width: 991px) {
     div.guess_box {
         margin: 0px;
         /* border: 1px solid rgb(38, 0, 255); */
@@ -285,6 +297,20 @@ div.guess_box {
         flex-direction: column;
         align-items: flex-end;
         margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 799px) {
+    div.guess_box {
+        margin: 0px;
+        /* border: 1px solid rgb(38, 0, 255); */
+        width: 20%;
+        min-width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 80px;
+        margin-left: 10%;
     }
 }
 
@@ -311,7 +337,19 @@ div.gray_bg {
     background-color: #E7E7E7;
     border-radius: 5px;
     position: relative;
-    ;
+}
+
+@media (max-width: 799px) {
+    div.gray_bg {
+        margin: 0px;
+        /* margin-left: 30px; */
+        width: 140px;
+        height: 90px;
+        background-color: #E7E7E7;
+        border-radius: 5px;
+        position: relative;
+        margin-right: 50px;
+    }
 }
 
 div.og_bg {
@@ -357,10 +395,22 @@ div.gray_text>span:last-child {
     font-size: .8rem;
 }
 
-div.guess_items{
+div.guess_items {
     margin: 0px;
     width: 700px;
-    
+}
+
+@media (max-width: 799px) {
+    div.guess_items {
+        /* border: 1px solid red; */
+        width: 100%;
+        /* overflow-x: scroll; */
+        /* overflow-y: hidden; */
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        padding-left: 10%;
+    }
 }
 
 div.guess_items>div {
@@ -369,14 +419,26 @@ div.guess_items>div {
     /* width: 700px; */
     display: flex;
     justify-content: space-between;
+    
 }
 
-@media (min-width: 992px) and (max-width: 1520px) {
+@media (min-width: 800px) and (max-width: 1520px) {
     div.guess_items>div {
         /* border: 1px solid red; */
-        margin: 0px;       
+        margin: 0px;
         display: flex;
         justify-content: space-between;
-        
+    }
+}
+
+@media (max-width: 799px) {
+    div.guess_items>div {
+         /* border: 1px solid red; */
+         margin: 0px;
+         display: flex;
+         justify-content: space-between;
+         position: absolute;
+         top: 80px;
+         /* padding-right: 10%; */
     }
 }

@@ -115,7 +115,7 @@ span.four_step_title {
     span.four_step_title {
         /* border: 1px solid rgb(0, 153, 255); */
         color: #202020;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 0;
         padding-left: 5vw;
         padding-right: 1vw;
@@ -171,7 +171,6 @@ div.group_news:last-child {
 
 span.news_date, .news_nav {
     color: #808080;
-    font-family: gensen_r;
     margin: 0px;
     margin-right: 50px;
     font-size: .8rem;
@@ -180,7 +179,6 @@ span.news_date, .news_nav {
 @media (max-width: 540px) {
     span.news_date, .news_nav {
         color: #808080;
-        font-family: gensen_r;
         margin: 0px;
         margin-right: 25px;
         font-size: .6rem;
@@ -232,7 +230,7 @@ div.hot_titlegroup>span:first-child {
         text-decoration: none;
         margin: 0px;
         color: #202020;
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 }
@@ -241,7 +239,6 @@ div.hot_titlegroup>span:last-child {
     color: #808080;
     font-size: 1rem;
     margin-top: 10px;
-    font-family: gensen_r;
 }
 
 @media (max-width: 540px) {
@@ -249,7 +246,6 @@ div.hot_titlegroup>span:last-child {
         color: #808080;
         font-size: .8rem;
         margin-top: 10px;
-        font-family: gensen_r;
     }
 }
 
@@ -435,7 +431,7 @@ img.home_banner_cup {
         z-index: 2;
         position: absolute;
         width: 55%;
-        min-width: 280px;
+        min-width: 300px;
         top: 60%;
         left: -25%;
         filter: drop-shadow(0px 20px 20px hsla(0, 0%, 0%, 0.5))
@@ -540,7 +536,20 @@ div.coffee_introduction_content {
     text-align: center;
 }
 
-@media (max-width: 540px) {
+@media (min-width: 541px) and (max-width: 950px) {
+    div.coffee_introduction_content {
+        position: absolute;
+        z-index: 2;
+        top: 8%;
+        left: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 540px) {
     div.coffee_introduction_content {
         position: static;
         z-index: 2;
@@ -560,7 +569,7 @@ div.coffee_introduction_content>span:first-child {
 @media (max-width: 540px) {
     div.coffee_introduction_content>span:first-child {
         color: #ffffff;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -568,7 +577,6 @@ div.coffee_introduction_content>span:last-child {
     margin-top: 40px;
     color: #ffffff;
     font-size: 1rem;
-    font-family: gensen_r;
     line-height: 1.4rem;
 }
 
@@ -576,8 +584,7 @@ div.coffee_introduction_content>span:last-child {
     div.coffee_introduction_content>span:last-child {
         margin-top: 40px;
         color: #ffffff;
-        font-size: .6rem;
-        font-family: gensen_r;
+        font-size: .8rem;
         line-height: 1rem;
     }
 }
@@ -622,7 +629,7 @@ div.home_four_bg {
 
 @media (max-width: 599px) {
     div.home_four_bg {
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         width: 90%;
         height: 800px;
         display: flex;
@@ -656,7 +663,7 @@ div.home_four_word>span:first-child {
 @media (max-width: 599px) {
     div.home_four_word>span:first-child {
         color: #202020;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 10px;
     }
 }
@@ -665,15 +672,13 @@ div.home_four_word>span:last-child {
     color: #202020;
     font-size: 1rem;
     line-height: 1.4rem;
-    font-family: gensen_r;
 }
 
 @media (max-width: 599px) {
     div.home_four_word>span:last-child {
         color: #202020;
-        font-size: .6rem;
+        font-size: .8rem;
         line-height: 1rem;
-        font-family: gensen_r;
     }
 }
 
@@ -699,7 +704,7 @@ div.home_four_word2>span:first-child {
 @media (max-width: 599px) {
     div.home_four_word2>span:first-child {
         color: #202020;
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 10px;
         text-align: right;
     }
@@ -710,15 +715,13 @@ div.home_four_word2>span:last-child {
     font-size: 1rem;
     line-height: 1.4rem;
     text-align: right;
-    font-family: gensen_r;
 }
 
 @media (max-width: 599px) {
     div.home_four_word2>span:last-child {
         color: #202020;
-        font-size: .6rem;
+        font-size: .8rem;
         line-height: 1rem;
-        font-family: gensen_r;
         text-align: right;
     }
 }
@@ -921,6 +924,20 @@ div.square_light_bg {
     background-attachment: fixed;
 }
 
+@media (max-width: 540px) {
+    div.square_light_bg {
+        margin: 0px;
+        width: 100%;
+        height: 650px;
+        background-image: url(../image/square_light_bg2.png);
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
 div.square_light {
     /* border: 1px solid red; */
     width: 100%;
@@ -1006,7 +1023,7 @@ div.square_light_word>span:first-child {
 
 @media (max-width: 540px) {
     div.square_light_word>span:first-child {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #202020;
         text-align: center;
     }
@@ -1016,18 +1033,16 @@ div.square_light_word>span:last-child {
     margin-top: 20px;
     font-size: 1rem;
     line-height: 1.4rem;
-    font-family: gensen_r;
     color: #202020;
-    text-align: center;
 }
 
 @media (max-width: 540px) {
     div.square_light_word>span:last-child {
         margin-top: 20px;
-        font-size: .6rem;
+        font-size: .8rem;
         line-height: 1rem;
-        font-family: gensen_r;
         color: #202020;
+        text-align: center;
     }
 }
 
@@ -1093,7 +1108,7 @@ div.last_banner_word>span:first-child {
 
 @media (max-width: 540px) {
     div.last_banner_word>span:first-child {
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #202020;
     }
 }
@@ -1103,7 +1118,6 @@ div.last_banner_word>span:last-child {
     margin-left: 10%;
     font-size: 1rem;
     line-height: 1.4rem;
-    font-family: gensen_r;
     color: #202020;
 }
 
@@ -1111,9 +1125,8 @@ div.last_banner_word>span:last-child {
     div.last_banner_word>span:last-child {
         margin-top: 4%;
         margin-left: 10%;
-        font-size: .6rem;
+        font-size: .8rem;
         line-height: 1rem;
-        font-family: gensen_r;
         color: #202020;
     }
 }
@@ -1161,17 +1174,15 @@ div.last_banner_word2>span {
     font-size: 1rem;
     line-height: 1.4rem;
     color: white;
-    font-family: gensen_r;
 }
 
 @media (max-width: 540px) {
     div.last_banner_word2>span {
         margin: 0px;
         margin-right: 30px;
-        font-size: .6rem;
+        font-size: .8rem;
         line-height: 1rem;
         color: white;
-        font-family: gensen_r;
     }
 }
 

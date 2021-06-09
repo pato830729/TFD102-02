@@ -10,7 +10,6 @@ div.map {
     overflow: hidden;
 }
 
-
 @media (max-width: 700px) {
     div.map {
         position: relative;
@@ -65,9 +64,10 @@ div.form_width {
 @media (max-width: 700px) {
     div.form_width {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         position: absolute;
-        right: 35px;
+        right: 0px;
+        left: 0px;
     }
 }
 
@@ -84,10 +84,34 @@ form.form_bg {
     align-items: center;
 }
 
+@media (max-width: 460px) {
+    form.form_bg {
+        margin: 0px;
+        border: 1px solid rgba(99, 99, 99, 0);
+        padding: 10px 20px;
+        background-color: #ffffff;
+        width: 100%;
+        height: 70%;
+        box-shadow: 0px 0px 22px hsla(0, 0%, 16%, 0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 div.input_group {
     margin: 20px 10px 10px;
     position: relative;
     /* border: 1px solid red; */
+}
+
+@media (max-width: 460px) {
+    div.input_group {
+        margin: 20px 10px 10px;
+        position: relative;
+        width: 90%;
+        /* border: 1px solid red; */
+    }
 }
 
 input {
@@ -96,6 +120,16 @@ input {
     width: 360px;
     border: none;
     border-bottom: 2px solid #202020;
+}
+
+@media (max-width: 460px) {
+    input {
+        font-size: 1rem;
+        padding: 8px 5px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #202020;
+    }
 }
 
 input:focus {
@@ -126,6 +160,16 @@ div.linebar {
     position: relative;
     display: block;
     width: 360px;
+}
+
+@media (max-width: 460px) {
+    div.linebar {
+        /* border: 1px solid red; */
+        margin: 0px;
+        position: relative;
+        display: block;
+        width: 100%;
+    }
 }
 
 div.linebar:before {
