@@ -21,7 +21,6 @@ main {
     width: 100%;
 }
 
-
 div.news_title_more {
     display: flex;
     margin-left: 0px;
@@ -416,9 +415,7 @@ button.open {
     font-weight: bold;
 }
 
-
-
-div.commodity_bg:hover button.open{
+div.commodity_bg:hover button.open {
     background: none;
     /* border: 3px solid #fbb03b; */
     background-color: #fbb03b;
@@ -610,7 +607,6 @@ div.coffee_introduction_content>span:first-child {
     div.coffee_introduction_content>span:first-child {
         color: #ffffff;
         font-size: 1.2rem;
-        
     }
 }
 
@@ -906,7 +902,7 @@ div.home_four_group3 {
         display: flex;
         justify-content: flex-start;
         width: 80%;
-        top: 62%;
+        top: 58%;
         left: 10%;
     }
 }
@@ -969,16 +965,40 @@ div.square_light_bg {
 
 @media (max-width: 540px) {
     div.square_light_bg {
+        display: none;
         margin: 0px;
         width: 100%;
         height: 650px;
-        background-image: url(../image/square_light_bg2.png);
+        background-image: url(../image/square_light_bg.png);
         background-repeat: no-repeat;
         overflow: hidden;
         background-position: center;
         background-size: cover;
-        -webkit-background-size: cover;
         background-attachment: fixed;
+    }
+}
+
+div.square_light_bg2 {
+    display: none;
+    margin: 0px;
+    width: 100%;
+    height: 650px;
+    background-image: url(../image/square_light_bg.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 540px) {
+    div.square_light_bg2 {
+        display: block;
+        margin: 0px;
+        width: 100%;
+        height: 650px;
+        overflow: hidden;
+        
     }
 }
 
@@ -1118,7 +1138,7 @@ div.last_banner_word {
     left: 20%;
 }
 
-@media (min-width: 992px) and (max-width: 1235px) {
+@media (min-width: 541px) and (max-width: 1235px) {
     div.last_banner_word {
         position: absolute;
         display: flex;
@@ -1130,13 +1150,13 @@ div.last_banner_word {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 540px) {
     div.last_banner_word {
         position: absolute;
         display: flex;
         flex-direction: column;
         width: 90%;
-        top: -80%;
+        top: -60%;
         left: 5%;
         z-index: 3;
     }
@@ -1156,7 +1176,6 @@ div.last_banner_word>span:first-child {
     div.last_banner_word>span:first-child {
         font-size: 1.2rem;
         color: #202020;
-
     }
 }
 
