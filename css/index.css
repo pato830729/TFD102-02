@@ -36,6 +36,7 @@ div.news_title_more>a {
     color: #508AE0;
     font-size: 1.2rem;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 @media (min-width: 992px) and (max-width: 1235px) {
@@ -66,6 +67,10 @@ div.news_title_more>a {
         color: #508AE0;
         font-size: 1rem;
     }
+}
+
+div.news_title_more :hover {
+    color: #2a39bb;
 }
 
 div.four_step {
@@ -329,7 +334,8 @@ div.commodity_bg {
     padding: 20px;
     /* margin: 30px; */
     border-radius: 10px;
-    /* box-shadow: 0px 0px 15px hsla(0, 0%, 16%, 0.3); */
+    box-shadow: 0px 0px 15px hsla(0, 0%, 16%, 0.3);
+    cursor: pointer;
 }
 
 div.commodity_bg:hover {
@@ -391,6 +397,7 @@ span.size2 {
 span.price {
     font-size: 1rem;
     color: #FBB03B;
+    font-weight: bold;
 }
 
 div.list_word {
@@ -408,6 +415,8 @@ button.open {
     cursor: pointer;
     font-weight: bold;
 }
+
+
 
 div.commodity_bg:hover button.open{
     background: none;
@@ -594,12 +603,14 @@ div.coffee_introduction_content {
 div.coffee_introduction_content>span:first-child {
     color: #ffffff;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 @media (max-width: 540px) {
     div.coffee_introduction_content>span:first-child {
         color: #ffffff;
         font-size: 1.2rem;
+        
     }
 }
 
@@ -688,6 +699,7 @@ div.home_four_word>span:first-child {
     color: #202020;
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 @media (max-width: 599px) {
@@ -729,6 +741,7 @@ div.home_four_word2>span:first-child {
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: right;
+    font-weight: bold;
 }
 
 @media (max-width: 599px) {
@@ -964,6 +977,7 @@ div.square_light_bg {
         overflow: hidden;
         background-position: center;
         background-size: cover;
+        -webkit-background-size: cover;
         background-attachment: fixed;
     }
 }
@@ -1049,6 +1063,7 @@ div.square_light_word>span {
 div.square_light_word>span:first-child {
     font-size: 1.5rem;
     color: #202020;
+    font-weight: bold;
 }
 
 @media (max-width: 540px) {
@@ -1134,12 +1149,14 @@ div.last_banner_word>span {
 div.last_banner_word>span:first-child {
     font-size: 1.5rem;
     color: #202020;
+    font-weight: bold;
 }
 
 @media (max-width: 540px) {
     div.last_banner_word>span:first-child {
         font-size: 1.2rem;
         color: #202020;
+
     }
 }
 

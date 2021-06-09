@@ -289,7 +289,7 @@ div.shopping_titlebox {
 
 div.shopping_footerbox {
     width: 100%;
-    height: 100px;
+    height: 120px;
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
@@ -319,6 +319,7 @@ span.shopping_title {
     /* border: 1px solid red; */
     font-size: 1.3rem;
     color: #202020;
+    font-weight: bold;
 }
 
 div.shopping_contentbox {
@@ -533,6 +534,7 @@ span.size2 {
 span.price {
     font-size: 1rem;
     color: #FBB03B;
+    font-weight: bold;
 }
 
 div.list_word {
@@ -548,7 +550,22 @@ button.open {
     border-radius: 3.5em;
     color: #fbb03b;
     cursor: pointer;
+    font-weight: bold;
 }
+
+div.commodity_bg:hover button.open{
+    background: none;
+    /* border: 3px solid #fbb03b; */
+    background-color: #fbb03b;
+    font-size: 1rem;
+    padding: .5em;
+    width: 160px;
+    border-radius: 3.5em;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 
 button.shopping_puy {
     background: #808080;

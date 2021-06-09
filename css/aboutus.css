@@ -35,6 +35,7 @@ h2.banner_title {
     color: white;
     font-size: 1.5rem;
     z-index: 2;
+    font-weight: bold;
 }
 
 @media (max-width: 991px) {
@@ -124,9 +125,8 @@ p.banner_content {
     color: #202020;
     margin: 0px;
     /* margin-left: 4%; */
-    font-size: .8rem;
-    line-height: 1.6rem;
-    
+    font-size: 1rem;
+    line-height: 1.4rem;
     margin-top: 100px;
 }
 
@@ -137,7 +137,6 @@ p.banner_content {
         /* margin-left: 4%; */
         font-size: .8rem;
         line-height: 1.6rem;
-        
         margin-top: 30px;
         text-align: center;
     }
@@ -160,6 +159,7 @@ span.four_step_title {
     margin: 0;
     padding-left: 20vw;
     padding-right: 1vw;
+    font-weight: bold;
 }
 
 @media (min-width: 992px) and (max-width: 1235px) {
@@ -355,13 +355,21 @@ div.bt_spanflex>span {
 
 div.bt_spanflex>span:first-child {
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 div.bt_spanflex>span:last-child {
     margin-top: 20px;
-    font-size: .8rem;
-    line-height: 1.6rem;
-    
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+@media (max-width: 991px) {
+    div.bt_spanflex>span:last-child {
+        margin-top: 20px;
+        font-size: .8rem;
+        line-height: 1.6rem;
+    }
 }
 
 div.two_block {
@@ -439,21 +447,20 @@ div.bt_spanflex2>span {
 
 div.bt_spanflex2>span:first-child {
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 div.bt_spanflex2>span:last-child {
     margin-top: 20px;
-    font-size: .8rem;
-    line-height: 1.2rem;
-    
+    font-size: 1rem;
+    line-height: 1.4rem;
 }
 
 @media (max-width: 991px) {
     div.bt_spanflex2>span:last-child {
         margin-top: 20px;
         font-size: .8rem;
-        line-height: 1.2rem;
-        
+        line-height: 1.6rem;
         margin-bottom: 40px;
     }
 }
@@ -470,23 +477,23 @@ div.two_block2 {
 @media (min-width: 461px) and (max-width: 991px) {
     div.two_block2 {
         /* border: 1px solid red; */
-    width: 350px;
-    height: 550px;
-    margin: auto;
-    background-image: url(../image/aboutUs_image07.png);
-    /* background-repeat: no-repeat; */
+        width: 350px;
+        height: 550px;
+        margin: auto;
+        background-image: url(../image/aboutUs_image07.png);
+        /* background-repeat: no-repeat; */
     }
 }
 
 @media (max-width: 460px) {
     div.two_block2 {
         /* border: 1px solid red; */
-    width: 210px;
-    height: 330px;
-    margin: auto;
-    background-image: url(../image/aboutUs_image07.png);
-    /* background-repeat: no-repeat; */
-    background-size: contain;
+        width: 210px;
+        height: 330px;
+        margin: auto;
+        background-image: url(../image/aboutUs_image07.png);
+        /* background-repeat: no-repeat; */
+        background-size: contain;
     }
 }
 

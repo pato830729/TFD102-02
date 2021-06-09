@@ -120,6 +120,7 @@ input {
     width: 360px;
     border: none;
     border-bottom: 2px solid #202020;
+    font-weight: bold;
 }
 
 @media (max-width: 460px) {

@@ -11,7 +11,6 @@ h2.coffee_name {
 h5.coffee_nameen {
     color: #808080;
     font-size: 1.2rem;
-    
 }
 
 span.size {
@@ -31,6 +30,7 @@ span.size {
 span.price {
     font-size: 1.5rem;
     color: #FBB03B;
+    font-weight: bold;
 }
 
 @media (max-width: 991px) {
@@ -70,6 +70,7 @@ p.desciption_content1 {
     padding-top: 3vh;
     font-size: 1rem;
     line-height: 1.2rem;
+    font-weight: bold;
 }
 
 @media (max-width: 991px) {
@@ -115,7 +116,7 @@ div.desciption {
     margin-bottom: 4vh; */
         margin: 0px;
         /* border: 1px solid red; */
-        width: 70%;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -177,12 +178,24 @@ div.img_bg {
     flex-shrink: 0;
 }
 
-@media (max-width: 799px) {
+@media (min-width: 461px) and (max-width: 799px)  {
     div.img_bg {
         margin: 0px;
         background-color: #FFCA87;
         width: 300px;
         height: 340px;
+        position: relative;
+        /* margin-right: 30px; */
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    div.img_bg {
+        margin: 0px;
+        background-color: #FFCA87;
+        width: 225px;
+        height: 240px;
         position: relative;
         /* margin-right: 30px; */
         flex-shrink: 0;
@@ -195,6 +208,17 @@ img.desciptionimg {
     left: -80px;
     top: -25%;
     filter: drop-shadow(0px 20px 20px hsla(24, 85%, 18%, 0.5))
+}
+
+@media (max-width: 460px) {
+    img.desciptionimg {
+        position: absolute;
+        width: 320px;
+        height: 320px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        filter: drop-shadow(0px 20px 20px hsla(24, 85%, 18%, 0.5))
+    }
 }
 
 div.down_desciption {
@@ -305,7 +329,7 @@ div.guess_box {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-bottom: 80px;
+        margin-bottom: 0px;
         margin-left: 10%;
     }
 }
@@ -375,8 +399,9 @@ div.gray_text {
     z-index: 2;
     width: 100px;
     left: 20%;
-    top: 50px;
+    top: 40px;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 div.gray_text>span {

@@ -158,7 +158,8 @@ section.section_width {
 h2.coffee_classificationtitle {
     color: #202020;
     /* margin-top: 30px; */
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 h2.coffee_classificationtitle::after {
@@ -275,6 +276,7 @@ div.qa_content>span {
 div.qa_content>span:first-child {
     color: #202020;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 div.qa_content>span:last-child{
