@@ -199,6 +199,7 @@ a.news_title {
     margin: 0px;
     color: #202020;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 @media (max-width: 540px) {
@@ -222,6 +223,7 @@ div.hot_titlegroup {
 div.hot_titlegroup>span:first-child {
     color: #202020;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 @media (max-width: 540px) {
@@ -327,6 +329,14 @@ div.commodity_bg {
     padding: 20px;
     /* margin: 30px; */
     border-radius: 10px;
+    /* box-shadow: 0px 0px 15px hsla(0, 0%, 16%, 0.3); */
+}
+
+div.commodity_bg:hover {
+    /* border: 1px solid red; */
+    padding: 20px;
+    /* margin: 30px; */
+    border-radius: 10px;
     box-shadow: 0px 0px 15px hsla(0, 0%, 16%, 0.3);
 }
 
@@ -341,7 +351,14 @@ div.commodity_sqare {
 
 img.commodity_sqareitem {
     height: 160px;
-    filter: drop-shadow(0px 10px 10px hsla(24, 85%, 18%, 0.5))
+    filter: drop-shadow(0px 10px 10px hsla(24, 85%, 18%, 0.5));
+    transition: transform .3s ease;
+}
+
+div.commodity_bg:hover img.commodity_sqareitem, div.commodity_bg:focus img.commodity_sqareitem {
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
 }
 
 h4.commodity_itemname {
@@ -389,6 +406,20 @@ button.open {
     border-radius: 3.5em;
     color: #fbb03b;
     cursor: pointer;
+    font-weight: bold;
+}
+
+div.commodity_bg:hover button.open{
+    background: none;
+    /* border: 3px solid #fbb03b; */
+    background-color: #fbb03b;
+    font-size: 1rem;
+    padding: .5em;
+    width: 160px;
+    border-radius: 3.5em;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 div.coffee_introduction {
@@ -1255,12 +1286,14 @@ div.last_banner_line2 {
 @media (min-width: 541px) and (max-width: 1540px) {
     .last_banner_hand>img {
         width: 380px;
+        align-self: flex-start;
     }
 }
 
 @media (max-width: 540px) {
     .last_banner_hand>img {
         width: 320px;
+        align-self: flex-start;
     }
 }
 
