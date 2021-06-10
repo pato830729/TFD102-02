@@ -496,7 +496,7 @@ a.nav_link:hover , a.nav_link2:hover{
 li.svg_box {
   width: 7%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 ul.header_nav {
